@@ -8,15 +8,79 @@ var userName = prompt('Who do I have the pleasure of speaking with? ');
 console.log('The users name is ' + userName);
 alert('Great to meet you ' + userName + '!');
 
-var play = prompt('Do you want to play a game? Press Y or N')
+// Make them play
+var letsPlay = prompt('Do you want to play a game? Press Y or N')
 .toUpperCase();
-console.log('The user chose ' + play);
+console.log('The user chose ' + letsPlay);
 
-if(play === 'Y'){
-    alert('Great! Let\'s have a little fun!')
+    if(letsPlay === 'Y'){
+        alert('Great! Let\'s have a little fun!')
+    }else{
+        alert('That\'s too bad. We are gonna play anyway!')
+    }
+
+// Go over rules and wish them luck
+alert('The rules are simple. ');
+alert('I am going to ask you a few questions. Let\'s see if you can guess correctly. ');
+alert('All you have to do is answer Y or N. ');
+alert('Good Luck! ');
+
+/*
+//Q1 and log answer
+var ownPets = prompt('First question. Do you think I own any pets? ')
+.toUpperCase();
+console.log('Do I own pets? ' + ownPets);
+
+    if(ownPets === 'Y'){
+        alert('Oh man! I dont own pets currently!')
+    }else{
+        alert('Lucky Guess!')
+    }
+
+//Q2 and log answer
+var likeFootball = prompt('Next question. Do I like football? ')
+.toUpperCase();
+console.log('Do I like football? ' + likeFootball);
+    if(likeFootball === 'Y'){
+        alert('Only if the Seahawks are playing! Just kidding. You\'re right!')
+    }else{
+        alert('Oh man! You missed that one.')
+    }
+
+//Q3 and log answer
+var haveKids = prompt('Next question. Do I have kids? ')
+.toUpperCase();
+console.log('Do I have kids? ' + haveKids);
+    if( haveKids === 'Y'){
+        alert('Haha! Is my dad bod that obvious!')
+        alert('Good guess. I have 2 kids.')
+    }else{
+        alert('Nice try but I have 2 kids. ')
+    }
+*/
+alert('Ok a couple more questions and we are done. ');
+
+//Q4
+var nextQ = prompt('? ')
+.toUpperCase();
+console.log(' ' + );
+    if( === 'Y'){
+        alert('!')
+    }else{
+        alert('')
+    }
+
+//Q4
+var nextQ = prompt('? ')
+.toUpperCase();
+console.log(' ' + );
+if( === 'Y'){
+    alert('!')
 }else{
-    alert('That\'s too bad. Maybe next time!')
+    alert('')
 }
+
+
 
 
 
@@ -26,11 +90,14 @@ if(play === 'Y'){
 
 
 /*
-if(pets === 2){
-    alert('That is correct!')
-}else {
-    alert('No, that is incorrect.')
-}
+var nextQ = prompt('? ')
+.toUpperCase();
+console.log(' ' + );
+if( === 'Y'){
+    alert('!')
+}else{
+    alert('')
+
 
 //Question about age
 
