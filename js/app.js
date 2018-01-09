@@ -25,7 +25,7 @@ alert('I am going to ask you a few questions. Let\'s see if you can guess correc
 alert('All you have to do is answer Y or N. ');
 alert('Good Luck! ');
 
-/*
+
 //Q1 and log answer
 var ownPets = prompt('First question. Do you think I own any pets? ')
 .toUpperCase();
@@ -51,37 +51,49 @@ console.log('Do I like football? ' + likeFootball);
 var haveKids = prompt('Next question. Do I have kids? ')
 .toUpperCase();
 console.log('Do I have kids? ' + haveKids);
-    if( haveKids === 'Y'){
+    if(haveKids === 'Y'){
         alert('Haha! Is my dad bod that obvious!')
         alert('Good guess. I have 2 kids.')
     }else{
         alert('Nice try but I have 2 kids. ')
     }
-*/
-alert('Ok a couple more questions and we are done. ');
+
+alert('A couple more questions and we are done. ');
 
 //Q4
-var nextQ = prompt('? ')
+var winLotto = prompt('Next question. Have I ever won the lottery? ')
 .toUpperCase();
-console.log(' ' + );
-    if( === 'Y'){
-        alert('!')
+console.log('Did I win the lottery? ' + winLotto);
+    if(winLotto === 'Y'){
+        alert('Really??')
+        alert('Do you think I would be sitting in this class if I did? ')
     }else{
-        alert('')
+        alert('Unfortunately.....You are right!')
     }
 
-//Q4
-var nextQ = prompt('? ')
+alert('Okay. Last question.');
+
+//Q5
+var leaveCountry = prompt('Have I ever been out of the country? ')
 .toUpperCase();
-console.log(' ' + );
-if( === 'Y'){
-    alert('!')
+console.log('Have I ever left the US? ' + leaveCountry);
+if( leaveCountry === 'Y'){
+    alert('Good Answer! I have been a couple places. My favorite was Tahiti.')
 }else{
-    alert('')
+    alert('Not quite. I have been a couple of places. ')
 }
 
+alert('Ok let me calculate your answers.......');
 
 
+if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === 'N' && leaveCountry === 'Y' ){
+    alert('Holy $*@t! Perfect Score. You know me very well!') 
+}else{
+    alert('You didn\'t get a perfect score but did very well!')
+}
+
+// wrap up 
+alert('Well that\'s a wrap. Thanks for playing.');
 
 
 //var pets = parseInt(prompt('How many pets do you think I have?'));
