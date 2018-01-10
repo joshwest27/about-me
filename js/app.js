@@ -27,7 +27,7 @@ console.log('The user chose ' + letsPlay);
             alert('That\'s too bad. We are gonna play anyway!')
             }
     }
-    
+
 // Go over rules and wish them luck
 alert('The rules are simple. ');
 alert('I am going to ask you a few questions. All you have to do is answer Y or N. ');
@@ -49,6 +49,7 @@ console.log('Do I own pets? ' + ownPets);
 var likeFootball = prompt('Next question. Do I like football? ')
 .toUpperCase();
 console.log('Do I like football? ' + likeFootball);
+
     if(likeFootball === 'Y'){
         alert('Only if the SEAHAWKS are playing! Just kidding. You\'re right!')
     }else{
@@ -59,6 +60,7 @@ console.log('Do I like football? ' + likeFootball);
 var haveKids = prompt('Next question. Do I have kids? ')
 .toUpperCase();
 console.log('Do I have kids? ' + haveKids);
+
     if(haveKids === 'Y'){
         alert('Haha! Is my dad bod that obvious!')
         alert('Good guess. I have 2 kids.')
@@ -72,6 +74,7 @@ alert('A couple more questions and we are done. ');
 var winLotto = prompt('Next question. Have I ever won the lottery? ')
 .toUpperCase();
 console.log('Did I win the lottery? ' + winLotto);
+
     if(winLotto === 'Y'){
         alert('Really??')
         alert('Do you think I would be sitting in this class if I did? ')
@@ -85,15 +88,16 @@ alert('Okay. Last question.');
 var leaveCountry = prompt('Have I ever been out of the country? ')
 .toUpperCase();
 console.log('Have I ever left the US? ' + leaveCountry);
-if( leaveCountry === 'Y'){
-    alert('Good Answer! I have been a couple places. My favorite was Tahiti.')
-}else{
-    alert('Not quite. I have been a couple of places. ')
-}
+
+    if( leaveCountry === 'Y'){
+        alert('Good Answer! I have been a couple places. My favorite was Tahiti.')
+    }else{
+        alert('Not quite. I have been a couple of places. ')
+    }
 
 alert('Ok let me calculate your answers.......');
 
-
+// Run a quick check
 if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === 'N' && leaveCountry === 'Y' ){
     alert('Holy $*@t! Perfect Score. You know me very well!') 
 }else{
