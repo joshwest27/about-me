@@ -28,6 +28,7 @@ console.log('The user chose ' + letsPlay);
             }
     }
 
+/*
 // Go over rules and wish them luck
 alert('The rules are simple. ');
 alert('I am going to ask you a few questions. All you have to do is answer Y or N. ');
@@ -104,3 +105,4 @@ if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === '
 alert('Well that\'s a wrap. Thanks for playing.');
 
 // end of program
+*/
