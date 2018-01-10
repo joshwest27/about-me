@@ -52,7 +52,7 @@ console.log('Do I like football? ' + likeFootball);
     if(likeFootball === 'Y'){
         alert('Only if the SEAHAWKS are playing! Just kidding. You\'re right!')
     }else{
-        alert('Oh man! You missed that one.')
+        alert('Oh man! You missed that one. I love footall!')
     }
 
 //Q3 and log answer
@@ -103,39 +103,4 @@ if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === '
 // wrap up 
 alert('Well that\'s a wrap. Thanks for playing.');
 
-
-//var pets = parseInt(prompt('How many pets do you think I have?'));
-
-// Ask the user 5 questions and log the answers into the console. 
-
-
-/*
-var nextQ = prompt('? ')
-.toUpperCase();
-console.log(' ' + );
-if( === 'Y'){
-    alert('!')
-}else{
-    alert('')
-
-
-//Question about age
-
-var alliesAge = prompt('Do you think I\'m older than 30? Pleae respond with Y or N?')
-.toUpperCase();
-
-// possible answers: yes, no, YES, NO, Yes, No, y, n, Y, NO
-
-if(alliesAge === 'Y'){
-    alert('Yes I\'m older than 30. ')
-}else if(alliesAge === 'N'){
-    alert('Thank you, I am flattered.');    
-}else{
-    alert('Please enter Y or N!');
-}
-
-
-// ARRAYS - collection, store more than one value in a variable as an array, data structure
-
-var arrayOfDogs = ['Gary', 'Charlotte', 'Demi', 'Bird', 'Mr Darcy'];
-*/
+// end of program
