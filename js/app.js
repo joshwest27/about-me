@@ -15,15 +15,23 @@ console.log('The user chose ' + letsPlay);
 
     if(letsPlay === 'Y'){
         alert('Great! Let\'s have a little fun!')
-    }else{
+    }else if(letsPlay === 'N'){
         alert('That\'s too bad. We are gonna play anyway!')
+    }else{
+        alert('That\'s not a valid response!')
+        prompt('Do you want to play a game? Press Y or N')
+        .toUpperCase()
+            if(letsPlay === 'Y'){
+            alert('Great! Let\'s have a little fun!')
+            }else{
+            alert('That\'s too bad. We are gonna play anyway!')
+            }
     }
 
 // Go over rules and wish them luck
 alert('The rules are simple. ');
-alert('I am going to ask you a few questions. Let\'s see if you can guess correctly. ');
-alert('All you have to do is answer Y or N. ');
-alert('Good Luck! ');
+alert('I am going to ask you a few questions. All you have to do is answer Y or N. ');
+alert('Let\'s see if you can guess correctly. Good Luck! ');
 
 
 //Q1 and log answer
@@ -32,7 +40,7 @@ var ownPets = prompt('First question. Do you think I own any pets? ')
 console.log('Do I own pets? ' + ownPets);
 
     if(ownPets === 'Y'){
-        alert('Oh man! I dont own pets currently!')
+        alert('Oh man! I don\'t own pets currently!')
     }else{
         alert('Lucky Guess!')
     }
@@ -42,7 +50,7 @@ var likeFootball = prompt('Next question. Do I like football? ')
 .toUpperCase();
 console.log('Do I like football? ' + likeFootball);
     if(likeFootball === 'Y'){
-        alert('Only if the Seahawks are playing! Just kidding. You\'re right!')
+        alert('Only if the SEAHAWKS are playing! Just kidding. You\'re right!')
     }else{
         alert('Oh man! You missed that one.')
     }
@@ -60,7 +68,7 @@ console.log('Do I have kids? ' + haveKids);
 
 alert('A couple more questions and we are done. ');
 
-//Q4
+//Q4 and log answer
 var winLotto = prompt('Next question. Have I ever won the lottery? ')
 .toUpperCase();
 console.log('Did I win the lottery? ' + winLotto);
@@ -73,7 +81,7 @@ console.log('Did I win the lottery? ' + winLotto);
 
 alert('Okay. Last question.');
 
-//Q5
+//Q5 and log answer
 var leaveCountry = prompt('Have I ever been out of the country? ')
 .toUpperCase();
 console.log('Have I ever left the US? ' + leaveCountry);
