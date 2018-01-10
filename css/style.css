@@ -1,20 +1,25 @@
-h1  {
-    
+*{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+h1  { 
     background-color: slategrey;
-    font-size: 50px;
-    color: darkred
+    font-size: 40px;
+    color: darkred;
+    text-align: center;
 }
 
 h2 {
-    font-size: 30px
-    
+    font-size: 30px;  
+    text-align: center;
 }
 
 p {
     font-size: 20px;
     color: blue;
-    font-family: cursive
-
-    
-    
+    font-family: cursive   
 }
+
