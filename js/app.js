@@ -9,11 +9,10 @@ console.log('The users name is ' + userName);
 alert('Great to meet you ' + userName + '!');
 
 // Make them play
-var letsPlay = prompt('Do you want to play a game? Press Y or N').toUpperCase();
-console.log('The user chose ' + letsPlay);
-
-
 function startGame() {
+  var letsPlay = prompt('Do you want to play a game? Press Y or N').toUpperCase();
+  console.log('The user chose ' + letsPlay);
+
   if(letsPlay === 'Y'){
     alert('Great! Let\'s have a little fun!');
   }else if(letsPlay === 'N'){
@@ -28,7 +27,6 @@ function startGame() {
     }
   }
 }
-startGame();
 
 
 // Go over rules and wish them luck
@@ -48,7 +46,6 @@ function questionOnePets() {
     alert('Lucky Guess!');
   }
 }
-questionOnePets();
 
 //Q2 and log answer
 function questionTwoFootball() {
@@ -61,7 +58,6 @@ function questionTwoFootball() {
     alert('Oh man! You missed that one. I love footall!');
   }
 }
-questionTwoFootball();
 
 //Q3 and log answer
 function questionThreeKids() {
@@ -74,10 +70,9 @@ function questionThreeKids() {
   }else{
     alert('Nice try but I have 2 kids. ');
   }
+  alert('A couple more questions and we are done. ');
 }
-questionThreeKids();
 
-alert('A couple more questions and we are done. ');
 
 //Q4 and log answer
 function questionFourLotto() {
@@ -90,10 +85,9 @@ function questionFourLotto() {
   }else{
     alert('Unfortunately.....You are right!');
   }
+  alert('Okay. Last question.');
 }
-questionFourLotto();
 
-alert('Okay. Last question.');
 
 //Q5 and log answer
 function questionFiveTravel() {
@@ -106,12 +100,11 @@ function questionFiveTravel() {
     alert('Not quite. I have been a couple of places. ');
   }
 }
-questionFiveTravel();
 
 //Q6 loop
-alert('Surprise! I think you know me so well that I want to ask you a bonus question! Click okay when ready. ');
 
 function questionSixAge() {
+  alert('Surprise! I think you know me so well that I want to ask you a bonus question! Click okay when ready. ');
   var myAge = prompt('How old do I look? ');
   console.log(myAge);
   myAge = parseInt(myAge);
@@ -133,17 +126,15 @@ function questionSixAge() {
     myAge = prompt('Guess again! How old do I look?');
     myAge = parseInt(myAge);
     console.log(myAge);
-  }while(i<=3);
-  if(i===3 && myAge !== 39){
+  }while(i <= 3);
+  if(i === 3 && myAge !== 39){
     alert('So sorry but you are all out of tries. Game Over!');
   }
 }
-questionSixAge();
-
-alert('Okay fine. I will ask you another question. ');
 
 //Q7 array and loop
 function questionSevenStates () {
+  alert('Okay fine. I will ask you another question.');
   var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
   var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
 
@@ -157,6 +148,15 @@ function questionSevenStates () {
     }
   }
 }
+
+//Call Functions
+startGame();
+questionOnePets();
+questionTwoFootball();
+questionThreeKids();
+questionFourLotto();
+questionFiveTravel();
+questionSixAge();
 questionSevenStates();
 
 
