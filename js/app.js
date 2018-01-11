@@ -88,7 +88,7 @@ console.log('Have I ever left the US? ' + leaveCountry);
     alert('Not quite. I have been a couple of places. ');
   }
 
-//Q6 and log answer
+//Q6 loop
 
 alert('Surprise! I think you know me so well that I want to ask you a bonus question! Click okay when ready. ');
 var myAge = prompt('How old do I look? ');
@@ -115,6 +115,7 @@ if(i===3 && myAge != 39){
 }
 alert('Okay fine. I will ask you another question. ');
 
+//Q7 array and loop
 var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
 var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
 var numGuess = 1;
@@ -147,3 +148,4 @@ if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === '
 alert('Well that\'s a wrap. Thanks for playing.');
 
 // end of program
+*/
