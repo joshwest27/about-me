@@ -132,13 +132,14 @@ function questionSixAge() {
   }
 }
 
+
 //Q7 array and loop
 function questionSevenStates () {
   alert('Okay fine. I will ask you another question.');
   var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
   var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
 
-  for(var j = 0; j < statesLived.length; j++){
+  for(var j = 3; j < 8; j++){
     if(userGuess === statesLived[j]){
       alert('That is correct! I lived in ' + statesLived[j]);
       break;
