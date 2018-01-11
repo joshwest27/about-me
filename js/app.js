@@ -97,7 +97,7 @@ myAge = parseInt(myAge);
 var i = 0;
 
 do{
-  if(myAge<39){
+  if(myAge < 39){
     alert('Thanks for the compliment....but I am older than that.');
   }else if(myAge > 39){
     alert('Ouch! I look that old? I am younger than that.');
