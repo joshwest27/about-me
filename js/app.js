@@ -122,16 +122,19 @@ function questionSixAge() {
       alert('Thanks for the compliment....but I am older than that.');
     }else if(myAge > 39){
       alert('Ouch! I look that old? I am younger than that.');
-    }else{
+    }else if(myAge === 39){
       alert('Wow! Excellent guess! You know me better than I thought.');
       break;
+    }else {
+      alert('Please enter a number!! Smarty pants.');
     }
-    i++
-    alert('You have ' + (4-i) + ' chances left!')
+    i++;
+    alert('You have ' + (4 - i) + ' chances left!');
     myAge = prompt('Guess again! How old do I look?');
+    myAge = parseInt(myAge);
     console.log(myAge);
   }while(i<=3);
-  if(i===3 && myAge != 39){
+  if(i===3 && myAge !== 39){
     alert('So sorry but you are all out of tries. Game Over!');
   }
 }
@@ -140,19 +143,23 @@ questionSixAge();
 alert('Okay fine. I will ask you another question. ');
 
 //Q7 array and loop
-var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
-var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
-var numGuess = 1;
+function questionSevenStates () {
+  var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
+  var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
 
-for(var j=0; j<statesLived.length; j++){
-  if(userGuess == statesLived[j]){
-    alert('That is correct! I lived in ' + statesLived[j]);
-    break;
-  }else{
-    alert('That is not correct. ');
-    userGuess = prompt('Guess again!')
+  for(var j = 0; j < statesLived.length; j++){
+    if(userGuess === statesLived[j]){
+      alert('That is correct! I lived in ' + statesLived[j]);
+      break;
+    }else{
+      alert('That is not correct. ');
+      userGuess = prompt('Guess again!');
+    }
   }
 }
+questionSevenStates();
+
+
 alert('That\'s all the questions for now. Thanks for playing. ');
 
 
