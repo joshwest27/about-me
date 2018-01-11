@@ -43,8 +43,7 @@ console.log('Do I own pets? ' + ownPets);
   }
 
 //Q2 and log answer
-var likeFootball = prompt('Next question. Do I like football? ');
-.toUpperCase();
+var likeFootball = prompt('Next question. Do I like football? ').toUpperCase();
 console.log('Do I like football? ' + likeFootball);
 
   if(likeFootball === 'Y'){
@@ -103,33 +102,21 @@ do{
   }else if(myAge > 39){
     alert('Ouch! I look that old? I am younger than that.');
   }else{
-    alert('correct');
+    alert('Wow! Excellent guess! You know me better than I thought.');
     break;
   }
     i++
     alert('You have ' + (4-i) + ' chances left!')
    myAge = prompt('Guess again! How old do I look?');
    console.log(myAge);
-}while(i<3);
-if(i===3){
-  alert('out of chances');
+}while(i<=3);
+if(i===3 && myAge != 39){
+  alert('So sorry but you are all out of tries. Game Over!');
 }
-
-if(myAge < 39){
-    alert('Ouch! I look that old? I am younger than that.');
-}else if(myAge > 39){
-    alert('Thanks for the compliment....but I am older than that.');
-}
-
-
-
 alert('Ok let me calculate your answers.......');
 
-/* need to update if statement to check 6th answer
-
-
 // Run a quick check
-if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === 'N' && leaveCountry === 'Y' ){
+if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === 'N' && leaveCountry === 'Y' && myAge === 39){
     alert('Holy $*@t! Perfect Score. You know me very well!') 
 }else{
     alert('You didn\'t get a perfect score but did very well!')
