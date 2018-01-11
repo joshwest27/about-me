@@ -113,6 +113,27 @@ do{
 if(i===3 && myAge != 39){
   alert('So sorry but you are all out of tries. Game Over!');
 }
+alert('Okay fine. I will ask you another question. ');
+
+var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
+var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
+var numGuess = 1;
+
+for(var j=0; j<statesLived.length; j++){
+  if(userGuess == statesLived[j]){
+    alert('That is correct! I lived in ' + statesLived[j]);
+    break;
+  }else{
+    alert('That is not correct. ');
+    userGuess = prompt('Guess again!')
+  }
+}
+alert('That\'s all the questions for now. Thanks for playing. ');
+
+
+
+
+/*
 alert('Ok let me calculate your answers.......');
 
 // Run a quick check
