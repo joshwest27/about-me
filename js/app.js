@@ -38,24 +38,30 @@ alert('Let\'s see if you can guess correctly. Good Luck! ');
 
 
 //Q1 and log answer
-var ownPets = prompt('First question. Do you think I own any pets? ').toUpperCase();
-console.log('Do I own pets? ' + ownPets);
+function questionOnePets() {
+  var ownPets = prompt('First question. Do you think I own any pets? ').toUpperCase();
+  console.log('Do I own pets? ' + ownPets);
 
-if(ownPets === 'Y'){
-  alert('Oh man! I don\'t own pets currently!');
-}else{
-  alert('Lucky Guess!');
+  if(ownPets === 'Y'){
+    alert('Oh man! I don\'t own pets currently!');
+  }else{
+    alert('Lucky Guess!');
+  }
 }
+questionOnePets();
 
 //Q2 and log answer
-var likeFootball = prompt('Next question. Do I like football? ').toUpperCase();
-console.log('Do I like football? ' + likeFootball);
+function questionTwoFootball() {
+  var likeFootball = prompt('Next question. Do I like football? ').toUpperCase();
+  console.log('Do I like football? ' + likeFootball);
 
-if(likeFootball === 'Y'){
-  alert('Only if the SEAHAWKS are playing! Just kidding. You\'re right!');
-}else{
-  alert('Oh man! You missed that one. I love footall!');
+  if(likeFootball === 'Y'){
+    alert('Only if the SEAHAWKS are playing! Just kidding. You\'re right!');
+  }else{
+    alert('Oh man! You missed that one. I love footall!');
+  }
 }
+questionTwoFootball();
 
 //Q3 and log answer
 var haveKids = prompt('Next question. Do I have kids? ').toUpperCase();
