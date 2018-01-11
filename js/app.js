@@ -64,66 +64,79 @@ function questionTwoFootball() {
 questionTwoFootball();
 
 //Q3 and log answer
-var haveKids = prompt('Next question. Do I have kids? ').toUpperCase();
-console.log('Do I have kids? ' + haveKids);
+function questionThreeKids() {
+  var haveKids = prompt('Next question. Do I have kids? ').toUpperCase();
+  console.log('Do I have kids? ' + haveKids);
 
-if(haveKids === 'Y'){
-  alert('Haha! Is my dad bod that obvious!');
-  alert('Good guess. I have 2 kids.');
-}else{
-  alert('Nice try but I have 2 kids. ');
+  if(haveKids === 'Y'){
+    alert('Haha! Is my dad bod that obvious!');
+    alert('Good guess. I have 2 kids.');
+  }else{
+    alert('Nice try but I have 2 kids. ');
+  }
 }
+questionThreeKids();
 
 alert('A couple more questions and we are done. ');
 
 //Q4 and log answer
-var winLotto = prompt('Next question. Have I ever won the lottery? ').toUpperCase();
-console.log('Did I win the lottery? ' + winLotto);
+function questionFourLotto() {
+  var winLotto = prompt('Next question. Have I ever won the lottery? ').toUpperCase();
+  console.log('Did I win the lottery? ' + winLotto);
 
-if(winLotto === 'Y'){
-  alert('Really??');
-  alert('Do you think I would be sitting in this class if I did? ');
-}else{
-  alert('Unfortunately.....You are right!');
+  if(winLotto === 'Y'){
+    alert('Really??');
+    alert('Do you think I would be sitting in this class if I did? ');
+  }else{
+    alert('Unfortunately.....You are right!');
+  }
 }
+questionFourLotto();
 
 alert('Okay. Last question.');
 
 //Q5 and log answer
-var leaveCountry = prompt('Have I ever been out of the country? ').toUpperCase();
-console.log('Have I ever left the US? ' + leaveCountry);
+function questionFiveTravel() {
+  var leaveCountry = prompt('Have I ever been out of the country? ').toUpperCase();
+  console.log('Have I ever left the US? ' + leaveCountry);
 
-if( leaveCountry === 'Y'){
-  alert('Good Answer! I have been a couple places. My favorite was Tahiti.');
-}else{
-  alert('Not quite. I have been a couple of places. ');
+  if( leaveCountry === 'Y'){
+    alert('Good Answer! I have been a couple places. My favorite was Tahiti.');
+  }else{
+    alert('Not quite. I have been a couple of places. ');
+  }
 }
+questionFiveTravel();
 
 //Q6 loop
-
 alert('Surprise! I think you know me so well that I want to ask you a bonus question! Click okay when ready. ');
-var myAge = prompt('How old do I look? ');
-console.log(myAge);
-myAge = parseInt(myAge);
-var i = 0;
 
-do{
-  if(myAge < 39){
-    alert('Thanks for the compliment....but I am older than that.');
-  }else if(myAge > 39){
-    alert('Ouch! I look that old? I am younger than that.');
-  }else{
-    alert('Wow! Excellent guess! You know me better than I thought.');
-    break;
-  }
-  i++
-  alert('You have ' + (4-i) + ' chances left!')
-  myAge = prompt('Guess again! How old do I look?');
+function questionSixAge() {
+  var myAge = prompt('How old do I look? ');
   console.log(myAge);
-}while(i<=3);
-if(i===3 && myAge != 39){
-  alert('So sorry but you are all out of tries. Game Over!');
+  myAge = parseInt(myAge);
+  var i = 0;
+
+  do{
+    if(myAge < 39){
+      alert('Thanks for the compliment....but I am older than that.');
+    }else if(myAge > 39){
+      alert('Ouch! I look that old? I am younger than that.');
+    }else{
+      alert('Wow! Excellent guess! You know me better than I thought.');
+      break;
+    }
+    i++
+    alert('You have ' + (4-i) + ' chances left!')
+    myAge = prompt('Guess again! How old do I look?');
+    console.log(myAge);
+  }while(i<=3);
+  if(i===3 && myAge != 39){
+    alert('So sorry but you are all out of tries. Game Over!');
+  }
 }
+questionSixAge();
+
 alert('Okay fine. I will ask you another question. ');
 
 //Q7 array and loop
