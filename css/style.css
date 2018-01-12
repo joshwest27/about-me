@@ -1,24 +1,30 @@
 *{
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
 }
 
 h1  { 
-    background-color: slategrey;
-    font-size: 40px;
-    color: darkred;
-    text-align: center;
+  background-color: slategrey;
+  font-size: 40px;
+  color: darkred;
+  text-align: center;
 }
 
 h2 {
-    font-size: 30px;  
-    text-align: center;
+  font-size: 30px;  
+  text-align: center;
 }
 
 p {
-    font-size: 20px;
-    color: blue;
-    font-family: cursive   
+  font-size: 20px;
+  color: blue;
+  font-family: cursive   
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+
 }
 

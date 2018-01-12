@@ -102,7 +102,6 @@ function questionFiveTravel() {
 }
 
 //Q6 loop
-
 function questionSixAge() {
   alert('Surprise! I think you know me so well that I want to ask you a bonus question! Click okay when ready. ');
   var myAge = prompt('How old do I look? ');
@@ -132,21 +131,29 @@ function questionSixAge() {
   }
 }
 
-
 //Q7 array and loop
-function questionSevenStates () {
+function questionSevenStates(){
   alert('Okay fine. I will ask you another question.');
-  var statesLived = ['texas', 'massachusetts', 'california', 'nevada',];
-  var userGuess = prompt('Can you guess another state I have lived in? You only get six tries.').toLowerCase();
+  var statesLived = ['texas', 'massachusetts', 'nevada', 'georgia']
+  var userGuess = 5;
+  var userCorrect = false;
 
-  for(var j = 3; j < 8; j++){
-    if(userGuess === statesLived[j]){
-      alert('That is correct! I lived in ' + statesLived[j]);
-      break;
-    }else{
-      alert('That is not correct. ');
-      userGuess = prompt('Guess again!');
+  do{
+    var stateGuess = prompt('Can you guess another state I have lived in? You only get ' + userGuess + ' tries.').toLowerCase();
+    for( var i = 0; i < statesLived.length; i++){
+      if(stateGuess === statesLived[i]){
+        userCorrect = true;
+      }
     }
+    if(userCorrect === true){
+      alert('Excellent guess!');
+    }else{
+      alert('Incorrect. Guess again.');
+      userGuess--;
+    }
+  }while (userCorrect === false && userGuess > 0);
+  if(userCorrect === false){
+    alert('Good effort but you are out of chances. ');
   }
 }
 
@@ -160,10 +167,7 @@ questionFiveTravel();
 questionSixAge();
 questionSevenStates();
 
-
 alert('That\'s all the questions for now. Thanks for playing. ');
-
-
 
 
 /*
@@ -178,6 +182,7 @@ if(ownPets === 'N' && likeFootball === 'Y' && haveKids === 'Y' && winLotto === '
 
 // wrap up 
 alert('Well that\'s a wrap. Thanks for playing.');
+*/
 
 // end of program
-*/
+
