@@ -134,7 +134,7 @@ function questionSixAge() {
 //Q7 array and loop
 function questionSevenStates(){
   alert('Okay fine. I will ask you another question.');
-  var statesLived = ['texas', 'massachusetts', 'nevada', 'georgia']
+  var statesLived = ['texas', 'massachusetts', 'nevada', 'georgia'];
   var userGuess = 5;
   var userCorrect = false;
 
