@@ -5,7 +5,7 @@
 
 .nav-items li {
     display: inline;
-    margin: 35px;
+    margin: 25px;
     padding: 25px;
     text-align: center;
 }
@@ -15,7 +15,14 @@ h1  {
     font-size: 40px;
     color: darkred;
     text-align: center;
-    padding: 10px
+    padding: 35px;
+    margin: 30px;
+    
+    
+}
+
+img{
+    float: left;
 }
 
 h2 {
@@ -23,14 +30,33 @@ h2 {
     text-align: center;
 }
 
+.game{
+    margin: 50px 10px 10px 20px;
+    padding: 30px 10px;
+    
+    
+}
+
 .main-para{
     font-size: 20px;
     color: darkblue;
+    margin: 10px;
+    padding: 15px;
+    overflow: auto;
 }
 
 p {
-    font-size: 15px;
+    font-size: 14px;
     color: blue;
     font-family: Gerogia, serif;   
 }
+
+.my-movies{
+  margin: 25px;
+}
+
+.top-movies{
+  margin: 15px;
+}
+
 
