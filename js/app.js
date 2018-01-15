@@ -54,8 +54,10 @@ function questionTwoFootball() {
 
   if(likeFootball === 'Y'){
     alert('Only if the SEAHAWKS are playing! Just kidding. You\'re right!');
-  }else{
+  }else if(likeFootball === 'N'){
     alert('Oh man! You missed that one. I love footall!');
+  }else{
+    alert('Please answer Y or N.');
   }
 }
 
